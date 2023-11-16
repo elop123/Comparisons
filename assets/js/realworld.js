@@ -24,13 +24,7 @@ myAnsverButton.addEventListener('click', (e) => {
   } else {
     alert('du har svarret forkert');
   }
-    
-  
-  
-  
-
-  
-   
+     
   /* din kode her. Skriv en alert der skriver "du har svarret rigtigt" hvis svarret er true
   og "du har svarret forkert" hvis svaret er false*/
 
