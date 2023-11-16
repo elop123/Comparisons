@@ -32,8 +32,8 @@
         <form>
             <label for="questionOne">Er elefanter lyserøde?</label><br>
             <select id="answerOne" name="questionOne">
-                <option value="false">ja</option>
-                <option value="true">nej</option>
+                <option value="false" >ja</option>
+                <option value="true" >nej</option>
                 <option value="true">ja i disney film</option>
             </select>
             <button id="answerButton">svar</button>
@@ -53,7 +53,7 @@
 
         <form>
             <label for="navn">Navn:</label><br>
-            <input type="text" id="myName" name="name" placeholder="Skriv dit navn her"><br>
+            <input type="text" id="myName" name="name" placeholder="Skriv dit navn her" patterns="min:{3}"><br>
 
             <label for="email">Email:</label><br>
             <input type="text" id="myEmail" name="email" placeholder="Skriv din email her"><br>
@@ -63,7 +63,7 @@
             <input type="text" id="myAge" name="age" placeholder="Alder"><br>
 
 
-            <button id="submitButton">indsend</button>
+            <button onclick="#" id="submitButton">indsend</button>
 
             <h4 id="formValideringResult">Indtast dine oplysninger.</h4>
 

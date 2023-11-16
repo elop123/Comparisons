@@ -2,7 +2,8 @@
 /* du må både ændre koden her, og i din HTML, hvis det er nødvendigt.. */
 
 
-/*Opgave 1: skriv en validering af svar i koden herunder. resultatet skal vises i myAnsverFeedbackElement når bruger trykker på myAnsverButton .
+/*Opgave 1: skriv en validering af svar i koden herunder. resultatet skal vises i myAnsverFeedbackElement 
+når bruger trykker på myAnsverButton .
 der et korrekte svar:
 nej 
 */
@@ -14,10 +15,25 @@ const myAnsverFeedbackElement = document.getElementById('answerFeedback');
 
 myAnsverButton.addEventListener('click', (e) => {
   e.preventDefault();
-  /* din kode her. Skriv en alert der skriver "du har svarret rigtigt" hvis svarret er true
-  og "du har svarret forkert" hvis svaret er false*/
+
   let myAnswer = myAnsverInput.value;
   console.log('Answer is: ' + myAnswer);
+
+  if (myAnswer === "true" ) {
+    alert('du har svarret rigtigt');  
+  } else {
+    alert('du har svarret forkert');
+  }
+    
+  
+  
+  
+
+  
+   
+  /* din kode her. Skriv en alert der skriver "du har svarret rigtigt" hvis svarret er true
+  og "du har svarret forkert" hvis svaret er false*/
+
 });
 
 /*Opgave 2: udkommenter opgave 1, og omskriv nu din funktion til to korrekte svar:
@@ -36,21 +52,52 @@ ja i disney film
 
 
 
+// function ValidateName(name){
+//   var name= /^[a-zA-Z ]+$/;
+// }
+
+// if (ValidateName()) {
+//   console.log("invalid name");
+// } else {
+//   console.log("Valid name");
+// }
+
+// function validateEmail(email) {
+//   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+         
+//  alert(re.test(re)); 
+//     return re.test(String(email).toLowerCase());  
+
+// }
+
+// if (validateEmail("test@example.com")) {
+//   console.log("Valid email address");
+// } else {
+//   console.log("Invalid email address");
+// }
+
+// function ValidateAge(age){
+//   if  age=12>;
+// }
+// console.log('Old enough');
+
+// if (ValidateName()) {
+//   console.log("invalid name");
+// } else {
+//   console.log("Valid name");
+// }
 
 
+// /* helper functions*/
+// function validateEmail(email) {
+//   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   return re.test(String(email).toLowerCase());
+// }
 
-
-
-/* helper functions*/
-function validateEmail(email) {
-  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-
-/* eks på kald:
-if (validateEmail("test@example.com")) {
-  console.log("Valid email address");
-} else {
-  console.log("Invalid email address");
-}
-*/
+// /* eks på kald:
+// if (validateEmail("test@example.com")) {
+//   console.log("Valid email address");
+// } else {
+//   console.log("Invalid email address");
+// }
+// */
