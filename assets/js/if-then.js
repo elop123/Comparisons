@@ -60,4 +60,9 @@ if (B !== C){
 
 //opgave 6: Skriv en If then statement der sammenligner B = C og E = A hvis B=C skal den blive TRUE. 
 
-
+ if ( B == C ||  E == A ){
+    console.log('true');
+ }
+   else{
+        console.log('false');
+    }
